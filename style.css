@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+    --default-famliy: 'Barlow Semi Condensed', sans-serif;
+    --default-border: .6rem;
+}
+
+body{
+    background: var(--light-grayish-blue);
+    font-size: 13px;
+    font-family: var(--default-famliy);
+    font-weight: 500;
+    margin: 20px;
+}
+
+/* cards coincidence */
+
+.introduction{
+    padding: 30px;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+h3{
+    margin: 5px 0;
+}
+
+h2{
+    margin: 30px 0;
+}
+
+img{
+    margin-right: 25px;
+    border-radius: 50%;
+}
+
+/* LIGHT CARDS */
+
+.white-paragraph{
+    color: var(--white);
+}
+
+.white-review-paragraph{
+    color: hsla(0, 0%, 100%, 0.7);
+}
+
+.white-light-paragraph{
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+/* DARK CARDS */
+
+.dark-blue-paragraph{
+    color: var(--very-dark-grayish-blue);
+}
+
+.blue-review-paragraph{
+    color: hsla(217, 30%, 14%, 0.7);
+}
+
+.blue-light-paragraph{
+    color: hsla(217, 30%, 14%, 0.5);
+}
+
+/* testimonial introduction */
+
+.testimonial__introduction{
+    display: flex;
+}
+
+/* DANIEL SECTION */
+
+.Daniel-section{
+    background: hsl(263,55%, 52%) url('images/bg-pattern-quotation.svg') no-repeat;
+    background-position:90% 0 ;
+    grid-column: 1 / 3;
+}
+
+/* JONATHAN SECTION */
+
+.Jonathan-section{
+    background: var(--very-dark-grayish-blue);
+}
+
+/* JEANETTE SECTION */
+
+.Jeanette-section{
+    background: var(--white);
+    grid-column: 1 / 2;
+}
+
+/* PATRICK SECTION */
+ 
+.Patrick-section{
+    background: var(--very-dark-blackish-blue);
+    grid-column: 2 / 4;
+}
+
+/* KIRA SECTION */
+
+.Kira-section{
+    background: var(--white);
+    grid-row: 1 / 3;
+    grid-column: 4 / 5;
+}
+
+
+@media (min-width: 1400px){
+    #container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
